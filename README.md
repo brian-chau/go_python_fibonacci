@@ -20,6 +20,7 @@ To use the GMP library, I did the following:
     * In my case, I used `gmp-6.2.1.tar.lz`
 2. Extract it by doing the following on Linux:
 
+```
 > sudo apt install lzip
 > sudo apt install m4
 > tar --lzip -xvf gmp
@@ -27,8 +28,10 @@ To use the GMP library, I did the following:
 > ./configure
 > make
 > make install
+```
 
 3. Install [this Go wrapper](https://github.com/ncw/gmp) for the GMP library.
+```
 > go get github.com/ncw/gmp
 > cd /path/to/current/working/directory
 > nano main.go
@@ -36,6 +39,7 @@ To use the GMP library, I did the following:
 > go mod init main
 > go mod tidy
 > go build main.go
+```
 
 4. Run it!
 
